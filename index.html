@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <span id="question-number">Question 1 of 3</span>
+            <div class="progress-bar"><div id="progress-fill"></div></div>
+        </div>
+
+        <div id="quiz-card">
+            <h2 id="question-text">Question text goes here?</h2>
+            <p id="question-hint" class="hint-text"></p>
+            
+            <div id="answer-container"></div>
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="btn">Next Question</button>
+        </div>
+
+        <div id="result-card" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <div class="score-display">
+                <span id="final-score">0</span> / <span id="total-score">0</span>
+            </div>
+            <p id="score-commentary"></p>
+            <button id="retry-btn" class="btn alt-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
